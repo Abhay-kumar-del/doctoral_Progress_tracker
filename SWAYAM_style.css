@@ -1,0 +1,210 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+}
+
+.menu-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ecf0f1;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2c3e50;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 16px 8px 16px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ecf0f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ecf0f1;
+}
+
+#menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ecf0f1;
+}
+
+.bottom-links {
+    margin-top: auto;
+    padding-bottom: 52px;
+}
+
+.bottom-links a {
+    padding: 16px 8px 16px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ecf0f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.bottom-links a:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#close-btn:hover {
+    box-shadow: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 200px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.swayam-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.swayam-button:hover {
+    background-color: #0056b3;
+}
+
+#My-courses, #Available-courses {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #2c3e50;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#courses, #available-courses-list {
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    width: 99%;
+    align-self: center;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; /* Ensure items are centered vertically */
+    padding: 10px;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.course-entry a {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.course-entry a:hover {
+    background-color: #e8e8e8;
+}
+
+.enroll-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1; /* Ensure the button takes up the same space as the other elements */
+    text-align: center;
+    width: auto;
+}
+
+.enroll-button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    transition: margin-left .5s;
+    padding: 16px;
+    flex: 1;
+    overflow: auto;
+}
+
